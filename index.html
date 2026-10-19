@@ -50,7 +50,6 @@
           <li><a href="#work">Work</a></li>
           <li><a href="#certifications">Certifications</a></li>
           <li><a href="#resume" aria-label="Résumé">Resume</a></li>
-          <li><a href="#articles">Articles</a></li>
           <li><a href="#contact">Contact Me</a></li>
         </ul>
         <button class="hamburger" aria-controls="mobile-menu" aria-expanded="false" aria-label="Open navigation menu">
@@ -66,7 +65,6 @@
           <li><a href="#work">Work</a></li>
           <li><a href="#certifications">Certifications</a></li>
           <li><a href="#resume" aria-label="Résumé">Resume</a></li>
-          <li><a href="#articles">Articles</a></li>
           <li><a href="#contact">Contact Me</a></li>
         </ul>
       </div>
@@ -82,7 +80,7 @@
         <p class="hero-eyebrow">Accessibility Tester &amp; Inclusive Design Advocate</p>
         <h1 id="hero-heading">
           Tanjina Haque
-          <span class="hero-italic">builds the web</span>
+          <span class="hero-italic">builds digital experiences</span>
           <span class="hero-accent">for everyone.</span>
         </h1>
         <img src="image/hero-floral-ornament-transparent.png" alt="" class="hero-floral-ornament" aria-hidden="true" />
@@ -91,12 +89,6 @@
           <div class="hero-actions">
             <a href="#work" class="btn btn-primary">See My Work</a>
             <a href="#contact" class="btn btn-outline">Get In Touch</a>
-          </div>
-          <div class="hero-standards" aria-label="Compliance standards I work with">
-            <span>WCAG 2.2</span>
-            <span>Section 508</span>
-            <span>ARIA</span>
-            <span>ADA</span>
           </div>
         </div>
       </div>
@@ -113,7 +105,7 @@
         </div>
         <div class="about-text">
           <h2 id="about-heading">About Me</h2>
-          <p>I'm a certified accessibility tester with <strong>6+ years</strong> of experience helping organisations build inclusive digital products. My work sits at the intersection of technical testing, user empathy, and standards compliance.</p>
+          <p>I'm a certified accessibility tester with <strong>6+ years</strong> of experience helping organizations build inclusive digital products. My work sits at the intersection of technical testing, user empathy, and standards compliance.</p>
           <p>I've partnered with government agencies, healthcare platforms, and e-commerce companies to audit, remediate, and integrate accessibility into every stage of the development lifecycle — not just at the finish line.</p>
           <ul class="about-stats" role="list" aria-label="Key achievements">
             <li>
@@ -450,37 +442,6 @@
       </div>
     </section>
 
-    <!-- Articles -->
-    <section id="articles" aria-labelledby="articles-heading" class="section-tinted">
-      <div class="container">
-        <h2 id="articles-heading">Articles</h2>
-        <p class="section-sub">Informational articles and reference pieces I can deep link to when explaining accessibility decisions, team practices, and inclusive product work.</p>
-        <div class="articles-grid" role="list">
-          <article class="article-card" role="listitem">
-            <p class="article-kicker">Accessibility Fundamentals</p>
-            <h3>Understanding Severity, User Impact, and Priority</h3>
-            <p>A guide for product teams on how accessibility issues affect users, how severity is determined, and how to make informed prioritization decisions.</p>
-            <a href="article-severity-user-impact-priority.html" class="article-link" aria-label="Read Understanding Severity, User Impact, and Priority article">Read article</a>
-          </article>
-          <article class="article-card" role="listitem">
-            <p class="article-kicker">Product Workflows</p>
-            <h3>Finding Accessibility Issues Earlier in the Sprint</h3>
-            <p>How teams can shift accessibility conversations into discovery, design review, acceptance criteria, and QA planning before defects become release blockers.</p>
-            <a href="article-accessibility-earlier-in-sprint.html" class="article-link" aria-label="Read Finding Accessibility Issues Earlier in the Sprint article">Read article</a>
-          </article>
-          <article class="article-card" role="listitem">
-            <p class="article-kicker">Developer Handoff</p>
-            <h3>Writing Accessibility Bugs Developers Can Act On</h3>
-            <p>A practical breakdown of what to include in Jira tickets so accessibility findings are clear, reproducible, and easier to validate after remediation.</p>
-            <a href="article-accessibility-bugs-developers-can-act-on.html" class="article-link" aria-label="Read Writing Accessibility Bugs Developers Can Act On article">Read article</a>
-          </article>
-        </div>
-        <div class="articles-action">
-          <a href="articles.html" class="btn btn-outline">View all articles</a>
-        </div>
-      </div>
-    </section>
-
     <!-- Testimonials -->
     <section id="testimonials" aria-labelledby="testimonials-heading">
       <div class="container">
@@ -796,7 +757,7 @@
       });
     }, { threshold: 0.1 });
 
-    document.querySelectorAll('.skill-card, .secondary-skill-card, .soft-skill-card, .work-card, .article-card, .cert-item, .resume-card, .testimonial').forEach(el => {
+    document.querySelectorAll('.skill-card, .secondary-skill-card, .soft-skill-card, .work-card, .cert-item, .resume-card, .testimonial').forEach(el => {
       el.classList.add('fade-in');
       observer.observe(el);
     });
