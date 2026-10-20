@@ -3,20 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Case study for a state benefits portal accessibility audit by Tanjina Haque." />
-  <title>Case Study: State Benefits Portal Audit — Tanjina Haque</title>
+  <title>placeholder — Tanjina Haque</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="homepage.css" />
+  <link rel="stylesheet" href="child-pages.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&amp;family=DM+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
 </head>
-<body class="auth-locked">
-
+<body class="auth-locked placeholder-page">
   <!-- Password Gate -->
   <div class="password-gate" id="password-gate" role="dialog" aria-labelledby="password-heading" aria-describedby="password-help" aria-modal="true">
     <form class="password-card" id="password-form">
       <p class="password-kicker">Private Portfolio</p>
-      <h1 id="password-heading">Enter Password</h1>
+      <h2 id="password-heading">Enter Password</h2>
       <p id="password-help">Please enter the password to view Tanjina Haque's case study.</p>
       <div class="password-field">
         <label for="portfolio-password">Password</label>
@@ -37,183 +37,16 @@
   </noscript>
 
   <a href="#main-content" class="skip-link">Skip to main content</a>
-
-  <header role="banner">
-    <nav aria-label="Case study navigation">
-      <div class="nav-inner">
-        <a href="index.html#work" class="case-study-back">Back to Featured Work</a>
-        <ul role="list">
-          <li><a href="index.html#hero">Home</a></li>
-          <li><a href="index.html#contact" class="nav-cta">Contact Me</a></li>
-        </ul>
-      </div>
+  <header>
+    <nav class="placeholder-nav" aria-label="Primary navigation">
+      <a href="index.html#hero" class="brand" aria-label="Tanjina Haque — Home"><span class="monogram" aria-hidden="true">T<span>H</span></span><span class="brand-copy"><strong>Tanjina Haque</strong><span>UX · Accessibility · Strategy</span></span></a>
+      <a href="index.html#all-projects" class="btn btn-outline">Back to Work</a>
     </nav>
   </header>
-
-  <main id="main-content" class="case-study-main">
-    <section class="case-study-hero" aria-labelledby="case-study-heading">
-      <div class="container">
-        <p class="hero-eyebrow">Accessibility Case Study</p>
-        <h1 id="case-study-heading">State Benefits Portal Audit</h1>
-        <p class="case-study-lead">A WCAG-focused audit and remediation partnership for a public benefits application serving millions of residents across eligibility, application, document upload, and status-check workflows.</p>
-        <dl class="case-study-meta">
-          <div>
-            <dt>Role</dt>
-            <dd>Accessibility Analyst</dd>
-          </div>
-          <div>
-            <dt>Timeline</dt>
-            <dd>3 Sprints</dd>
-          </div>
-          <div>
-            <dt>Scope</dt>
-            <dd>Web Portal</dd>
-          </div>
-          <div>
-            <dt>Standards</dt>
-            <dd>WCAG 2.1 AA</dd>
-          </div>
-        </dl>
-        <div class="case-study-visual-grid" role="group" aria-label="Placeholder visuals for the benefits portal audit">
-          <figure class="case-visual">
-            <div class="mock-panel" aria-hidden="true">
-              <div class="mock-panel-header"><span></span><span></span><span></span></div>
-              <div class="mock-panel-body">
-                <div class="mock-line medium"></div>
-                <div class="mock-field"></div>
-                <div class="mock-field mock-focus"></div>
-                <div class="mock-alert">Error message linked to field</div>
-                <div class="mock-button"></div>
-              </div>
-            </div>
-            <figcaption>Application form state with focus and error treatment</figcaption>
-          </figure>
-          <figure class="case-visual">
-            <div class="mock-panel" aria-hidden="true">
-              <div class="mock-panel-header"><span></span><span></span><span></span></div>
-              <div class="mock-panel-body">
-                <div class="mock-table">
-                  <div class="mock-table-cell header"></div><div class="mock-table-cell header"></div><div class="mock-table-cell header"></div>
-                  <div class="mock-table-cell"></div><div class="mock-table-cell"></div><div class="mock-table-cell"></div>
-                  <div class="mock-table-cell"></div><div class="mock-table-cell"></div><div class="mock-table-cell"></div>
-                  <div class="mock-table-cell"></div><div class="mock-table-cell"></div><div class="mock-table-cell"></div>
-                </div>
-              </div>
-            </div>
-            <figcaption>Audit tracker organized by severity and WCAG criterion</figcaption>
-          </figure>
-          <figure class="case-visual">
-            <div class="mock-panel" aria-hidden="true">
-              <div class="mock-panel-body">
-                <div class="mock-device">
-                  <div class="mock-card-stack">
-                    <div class="mock-line medium"></div>
-                    <div class="mock-card">
-                      <div class="mock-card-line"></div>
-                      <div class="mock-card-line short"></div>
-                    </div>
-                    <div class="mock-button"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <figcaption>Mobile document upload placeholder for responsive testing</figcaption>
-          </figure>
-        </div>
-      </div>
-    </section>
-
-    <div class="container case-study-content">
-      <section class="case-study-section" aria-labelledby="overview-heading">
-        <h2 id="overview-heading">Overview</h2>
-        <p>The portal needed to support residents applying for essential benefits, including users navigating with keyboards, screen readers, magnification, and limited bandwidth. My work focused on identifying barriers, documenting their real user impact, and helping the product team remediate issues without slowing release momentum.</p>
-      </section>
-
-      <section class="case-study-section" aria-labelledby="challenge-heading">
-        <h2 id="challenge-heading">Challenge</h2>
-        <p>The application had several complex flows: eligibility questions, account setup, multi-step forms, file upload, review, and submission confirmation. Small accessibility defects in these flows could prevent users from completing time-sensitive applications.</p>
-        <ul class="case-study-list" role="list">
-          <li>Keyboard users encountered inconsistent focus order and missing focus indicators.</li>
-          <li>Screen reader users did not always receive clear form instructions or error feedback.</li>
-          <li>Dynamic status updates were not consistently announced to assistive technology.</li>
-          <li>Some document upload controls depended too heavily on visual-only cues.</li>
-        </ul>
-      </section>
-
-      <section class="case-study-section" aria-labelledby="process-heading">
-        <h2 id="process-heading">Process</h2>
-        <ul class="case-study-list" role="list">
-          <li>Mapped critical user journeys and prioritized the paths most likely to block benefit access.</li>
-          <li>Ran manual keyboard, screen reader, zoom, contrast, and responsive checks across key pages.</li>
-          <li>Used automated tools to catch repeatable issues and confirm fixes during regression testing.</li>
-          <li>Grouped findings by severity, user impact, WCAG criterion, and remediation ownership.</li>
-          <li>Partnered with designers and engineers to clarify accessible patterns for forms, alerts, errors, and focus management.</li>
-        </ul>
-        <div class="case-study-visual-grid case-study-visual-grid--two" role="group" aria-label="Placeholder process visuals">
-          <figure class="case-visual">
-            <div class="mock-panel" aria-hidden="true">
-              <div class="mock-panel-body">
-                <div class="mock-flow">
-                  <div class="mock-flow-step active"></div>
-                  <div class="mock-flow-step"></div>
-                  <div class="mock-flow-step"></div>
-                  <div class="mock-flow-step"></div>
-                </div>
-                <div class="mock-line medium"></div>
-                <div class="mock-line short"></div>
-              </div>
-            </div>
-            <figcaption>Focus order map for a multi-step benefits journey</figcaption>
-          </figure>
-          <figure class="case-visual">
-            <div class="mock-panel" aria-hidden="true">
-              <div class="mock-panel-body">
-                <div class="mock-note">Screen reader announcement: "Upload complete. Continue to review."</div>
-                <div class="mock-note">Keyboard expectation: focus moves to the next required step.</div>
-                <div class="mock-note">Developer note: use live region for status changes.</div>
-              </div>
-            </div>
-            <figcaption>Assistive technology notes used during remediation handoff</figcaption>
-          </figure>
-        </div>
-      </section>
-
-      <section class="case-study-section" aria-labelledby="findings-heading">
-        <h2 id="findings-heading">Key Findings</h2>
-        <ul class="case-study-list" role="list">
-          <li>Form fields needed stronger programmatic labels, instructions, and error associations.</li>
-          <li>Custom controls required keyboard support and clearer state communication.</li>
-          <li>Focus management needed to be standardized after modals, validation errors, and step changes.</li>
-          <li>Several text and UI combinations needed contrast improvements to meet AA requirements.</li>
-        </ul>
-      </section>
-
-      <section class="case-study-callout" aria-labelledby="results-heading">
-        <h2 id="results-heading">Impact</h2>
-        <ul class="case-study-results" role="list">
-          <li><strong>147</strong> issues identified, categorized, and tracked through remediation.</li>
-          <li><strong>100%</strong> WCAG 2.1 AA compliance reached for audited critical flows.</li>
-          <li><strong>97%</strong> screen reader task success rate after remediation validation.</li>
-        </ul>
-      </section>
-
-      <section class="case-study-section" aria-labelledby="reflection-heading">
-        <h2 id="reflection-heading">Reflection</h2>
-        <p>The most important lesson from this project was that accessibility analysis works best when it connects standards to human consequences. The team moved faster when findings explained not only what failed, but who was blocked, why it mattered, and what pattern could prevent the issue from returning.</p>
-      </section>
-    </div>
+  <main id="main-content" class="placeholder-content">
+    <h1>placeholder</h1>
   </main>
-
-  <footer role="contentinfo">
-    <div class="container footer-inner">
-      <p>&copy; <span id="year"></span> Tanjina Haque. Built with accessibility first.</p>
-      <nav aria-label="Footer navigation">
-        <a href="index.html#work">Featured Work</a>
-        <a href="index.html#contact">Contact Me</a>
-      </nav>
-    </div>
-  </footer>
-
+  <footer><div class="container"><p>&copy; <span id="year"></span> Tanjina Haque</p></div></footer>
   <script>
     // Password protection
     const PORTFOLIO_PASSWORD = 'portfolio2026';
@@ -261,6 +94,5 @@
 
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
-
 </body>
 </html>

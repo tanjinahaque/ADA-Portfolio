@@ -3,20 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Case study for an accessible e-commerce checkout remediation by Tanjina Haque." />
-  <title>Case Study: Checkout Flow Remediation — Tanjina Haque</title>
+  <title>placeholder — Tanjina Haque</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="homepage.css" />
+  <link rel="stylesheet" href="child-pages.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&amp;family=DM+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
 </head>
-<body class="auth-locked">
-
+<body class="auth-locked placeholder-page">
   <!-- Password Gate -->
   <div class="password-gate" id="password-gate" role="dialog" aria-labelledby="password-heading" aria-describedby="password-help" aria-modal="true">
     <form class="password-card" id="password-form">
       <p class="password-kicker">Private Portfolio</p>
-      <h1 id="password-heading">Enter Password</h1>
+      <h2 id="password-heading">Enter Password</h2>
       <p id="password-help">Please enter the password to view Tanjina Haque's case study.</p>
       <div class="password-field">
         <label for="portfolio-password">Password</label>
@@ -37,183 +37,16 @@
   </noscript>
 
   <a href="#main-content" class="skip-link">Skip to main content</a>
-
-  <header role="banner">
-    <nav aria-label="Case study navigation">
-      <div class="nav-inner">
-        <a href="index.html#work" class="case-study-back">Back to Featured Work</a>
-        <ul role="list">
-          <li><a href="index.html#hero">Home</a></li>
-          <li><a href="index.html#contact" class="nav-cta">Contact Me</a></li>
-        </ul>
-      </div>
+  <header>
+    <nav class="placeholder-nav" aria-label="Primary navigation">
+      <a href="index.html#hero" class="brand" aria-label="Tanjina Haque — Home"><span class="monogram" aria-hidden="true">T<span>H</span></span><span class="brand-copy"><strong>Tanjina Haque</strong><span>UX · Accessibility · Strategy</span></span></a>
+      <a href="index.html#all-projects" class="btn btn-outline">Back to Work</a>
     </nav>
   </header>
-
-  <main id="main-content" class="case-study-main">
-    <section class="case-study-hero" aria-labelledby="case-study-heading">
-      <div class="container">
-        <p class="hero-eyebrow">Accessibility Case Study</p>
-        <h1 id="case-study-heading">Checkout Flow Remediation</h1>
-        <p class="case-study-lead">A focused accessibility remediation effort for a high-traffic e-commerce checkout where keyboard traps and focus failures were preventing customers from completing purchases.</p>
-        <dl class="case-study-meta">
-          <div>
-            <dt>Role</dt>
-            <dd>Accessibility Analyst</dd>
-          </div>
-          <div>
-            <dt>Timeline</dt>
-            <dd>2 Sprints</dd>
-          </div>
-          <div>
-            <dt>Scope</dt>
-            <dd>Checkout Flow</dd>
-          </div>
-          <div>
-            <dt>Standards</dt>
-            <dd>WCAG 2.1 AA</dd>
-          </div>
-        </dl>
-        <div class="case-study-visual-grid" role="group" aria-label="Placeholder visuals for the checkout remediation">
-          <figure class="case-visual">
-            <div class="mock-panel" aria-hidden="true">
-              <div class="mock-panel-header"><span></span><span></span><span></span></div>
-              <div class="mock-panel-body">
-                <div class="mock-flow">
-                  <div class="mock-flow-step active"></div>
-                  <div class="mock-flow-step"></div>
-                  <div class="mock-flow-step"></div>
-                  <div class="mock-flow-step"></div>
-                </div>
-                <div class="mock-field"></div>
-                <div class="mock-field mock-focus"></div>
-                <div class="mock-button"></div>
-              </div>
-            </div>
-            <figcaption>Checkout stepper placeholder with visible focus treatment</figcaption>
-          </figure>
-          <figure class="case-visual">
-            <div class="mock-panel" aria-hidden="true">
-              <div class="mock-panel-body">
-                <div class="mock-card-stack">
-                  <div class="mock-card"><div class="mock-card-line"></div><div class="mock-card-line short"></div></div>
-                  <div class="mock-card mock-focus"><div class="mock-card-line medium"></div><div class="mock-card-line"></div></div>
-                  <div class="mock-note">Focus returns to triggering control after modal closes.</div>
-                </div>
-              </div>
-            </div>
-            <figcaption>Modal focus trap placeholder for keyboard remediation</figcaption>
-          </figure>
-          <figure class="case-visual">
-            <div class="mock-panel" aria-hidden="true">
-              <div class="mock-panel-header"><span></span><span></span><span></span></div>
-              <div class="mock-panel-body">
-                <div class="mock-line medium"></div>
-                <div class="mock-field"></div>
-                <div class="mock-field mock-focus"></div>
-                <div class="mock-alert">Payment error associated with card number</div>
-              </div>
-            </div>
-            <figcaption>Payment form placeholder for error association testing</figcaption>
-          </figure>
-        </div>
-      </div>
-    </section>
-
-    <div class="container case-study-content">
-      <section class="case-study-section" aria-labelledby="overview-heading">
-        <h2 id="overview-heading">Overview</h2>
-        <p>The checkout flow served roughly 40K monthly users and included cart review, shipping, payment, promotions, account sign-in, and confirmation steps. I audited the flow, isolated blockers, and partnered with developers to validate remediation across each checkout step.</p>
-      </section>
-
-      <section class="case-study-section" aria-labelledby="challenge-heading">
-        <h2 id="challenge-heading">Challenge</h2>
-        <p>The most urgent barrier was a keyboard trap in the multi-step checkout, but the larger issue was inconsistent focus behavior across overlays, validation messages, and step transitions.</p>
-        <ul class="case-study-list" role="list">
-          <li>Keyboard users could not reliably exit promotional and payment overlays.</li>
-          <li>Focus sometimes moved behind modals or returned to the wrong step.</li>
-          <li>Error messages were visually clear but not consistently associated with fields.</li>
-          <li>Progress updates were not always announced after step changes.</li>
-        </ul>
-      </section>
-
-      <section class="case-study-section" aria-labelledby="process-heading">
-        <h2 id="process-heading">Process</h2>
-        <ul class="case-study-list" role="list">
-          <li>Reproduced the keyboard trap and documented the exact tab sequence that caused it.</li>
-          <li>Mapped expected focus behavior for each checkout step, modal, validation event, and confirmation state.</li>
-          <li>Reviewed ARIA attributes, field labels, live regions, and error associations.</li>
-          <li>Created regression checks for keyboard-only, screen reader, zoom, and mobile viewport testing.</li>
-          <li>Validated fixes with developers before release and again after deployment.</li>
-        </ul>
-        <div class="case-study-visual-grid case-study-visual-grid--two" role="group" aria-label="Placeholder remediation visuals">
-          <figure class="case-visual">
-            <div class="mock-panel" aria-hidden="true">
-              <div class="mock-panel-body">
-                <div class="mock-flow">
-                  <div class="mock-flow-step"></div>
-                  <div class="mock-flow-step active"></div>
-                  <div class="mock-flow-step"></div>
-                  <div class="mock-flow-step"></div>
-                </div>
-                <div class="mock-note">Expected tab sequence documented for each checkout state.</div>
-                <div class="mock-line medium"></div>
-              </div>
-            </div>
-            <figcaption>Keyboard path map placeholder for checkout regression checks</figcaption>
-          </figure>
-          <figure class="case-visual">
-            <div class="mock-panel" aria-hidden="true">
-              <div class="mock-panel-body">
-                <ul class="mock-checklist" role="list">
-                  <li>Overlay escape behavior verified</li>
-                  <li>Focus restoration confirmed</li>
-                  <li>Errors announced with field context</li>
-                  <li>Step changes announced consistently</li>
-                </ul>
-              </div>
-            </div>
-            <figcaption>Regression checklist placeholder for remediation validation</figcaption>
-          </figure>
-        </div>
-      </section>
-
-      <section class="case-study-section" aria-labelledby="findings-heading">
-        <h2 id="findings-heading">Key Findings</h2>
-        <ul class="case-study-list" role="list">
-          <li>Modal focus trapping was incomplete and did not restore focus to the triggering control.</li>
-          <li>Several disabled-looking controls remained keyboard-focusable.</li>
-          <li>Payment field errors needed stronger programmatic relationships and clearer recovery instructions.</li>
-          <li>Step changes needed consistent headings, focus targets, and status announcements.</li>
-        </ul>
-      </section>
-
-      <section class="case-study-callout" aria-labelledby="results-heading">
-        <h2 id="results-heading">Impact</h2>
-        <ul class="case-study-results" role="list">
-          <li><strong>6</strong> checkout steps verified with keyboard trap remediation.</li>
-          <li><strong>100%</strong> focus management coverage for audited modal and step-change patterns.</li>
-          <li><strong>8%</strong> conversion uplift after checkout accessibility fixes shipped.</li>
-        </ul>
-      </section>
-
-      <section class="case-study-section" aria-labelledby="reflection-heading">
-        <h2 id="reflection-heading">Reflection</h2>
-        <p>This project reinforced how accessibility defects can become business defects too. Fixing keyboard and focus behavior did not only help customers using assistive technology; it made the checkout flow more predictable for everyone.</p>
-      </section>
-    </div>
+  <main id="main-content" class="placeholder-content">
+    <h1>placeholder</h1>
   </main>
-
-  <footer role="contentinfo">
-    <div class="container footer-inner">
-      <p>&copy; <span id="year"></span> Tanjina Haque. Built with accessibility first.</p>
-      <nav aria-label="Footer navigation">
-        <a href="index.html#work">Featured Work</a>
-        <a href="index.html#contact">Contact Me</a>
-      </nav>
-    </div>
-  </footer>
-
+  <footer><div class="container"><p>&copy; <span id="year"></span> Tanjina Haque</p></div></footer>
   <script>
     // Password protection
     const PORTFOLIO_PASSWORD = 'portfolio2026';
@@ -261,6 +94,5 @@
 
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
-
 </body>
 </html>

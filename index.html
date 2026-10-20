@@ -6,9 +6,10 @@
   <meta name="description" content="Portfolio of Tanjina Haque — Accessibility Tester & Inclusive Design Advocate dedicated to building digital experiences for everyone." />
   <title>Tanjina Haque — Accessibility Tester</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="homepage.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
 </head>
 <body class="auth-locked">
 
@@ -16,7 +17,7 @@
   <div class="password-gate" id="password-gate" role="dialog" aria-labelledby="password-heading" aria-describedby="password-help" aria-modal="true">
     <form class="password-card" id="password-form">
       <p class="password-kicker">Private Portfolio</p>
-      <h1 id="password-heading">Enter Password</h1>
+      <h2 id="password-heading">Enter Password</h2>
       <p id="password-help">Please enter the password to view Tanjina Haque's portfolio.</p>
       <div class="password-field">
         <label for="portfolio-password">Password</label>
@@ -39,86 +40,58 @@
   <!-- Skip Navigation -->
   <a href="#main-content" class="skip-link">Skip to main content</a>
 
-  <!-- Header / Nav -->
+  <!-- Editorial header -->
   <header role="banner">
     <nav aria-label="Primary navigation">
       <div class="nav-inner">
-        <a href="#hero" class="nav-logo" aria-label="Tanjina Haque — Home">TH</a>
-        <ul role="list">
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#work">Work</a></li>
-          <li><a href="#certifications">Certifications</a></li>
-          <li><a href="#resume" aria-label="Résumé">Resume</a></li>
-          <li><a href="#contact">Contact Me</a></li>
-        </ul>
-        <button class="hamburger" aria-controls="mobile-menu" aria-expanded="false" aria-label="Open navigation menu">
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </button>
+        <a href="#hero" class="brand" aria-label="Tanjina Haque — Home"><span class="monogram" aria-hidden="true">T<span>H</span></span><span class="brand-copy"><strong>Tanjina Haque</strong><span>UX · Accessibility · Strategy</span></span></a>
+        <ul class="desktop-navigation" role="list"><li><a href="#hero">Home</a></li><li><a href="#about">About Me</a></li><li><a href="#skills">Skills</a></li><li><a href="#all-projects">Work</a></li><li><a href="#resume">Experience</a></li><li><a href="#contact">Contact</a></li></ul>
+        <button class="hamburger" aria-controls="mobile-menu" aria-expanded="false" aria-label="Open navigation menu"><span></span><span></span><span></span></button>
       </div>
-      <div id="mobile-menu" class="mobile-menu" hidden>
-        <ul role="list">
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#work">Work</a></li>
-          <li><a href="#certifications">Certifications</a></li>
-          <li><a href="#resume" aria-label="Résumé">Resume</a></li>
-          <li><a href="#contact">Contact Me</a></li>
-        </ul>
-      </div>
+      <div id="mobile-menu" class="mobile-menu" hidden><ul role="list"><li><a href="#hero">Home</a></li><li><a href="#about">About Me</a></li><li><a href="#skills">Skills</a></li><li><a href="#all-projects">Work</a></li><li><a href="#resume">Experience</a></li><li><a href="#contact">Contact</a></li></ul></div>
     </nav>
   </header>
-
   <main id="main-content">
-
-    <!-- Hero -->
     <section id="hero" aria-labelledby="hero-heading">
-      <div class="hero-blob" aria-hidden="true"></div>
       <div class="hero-inner">
-        <p class="hero-eyebrow">Accessibility Tester &amp; Inclusive Design Advocate</p>
-        <h1 id="hero-heading">
-          Tanjina Haque
-          <span class="hero-italic">builds digital experiences</span>
-          <span class="hero-accent">for everyone.</span>
-        </h1>
-        <img src="image/hero-floral-ornament-transparent.png" alt="" class="hero-floral-ornament" aria-hidden="true" />
-        <p class="hero-lead">I test, audit, and champion digital experiences that work for every user — regardless of ability, device, or context.</p>
-        <div class="hero-cta-cluster">
-          <div class="hero-actions">
-            <a href="#work" class="btn btn-primary">See My Work</a>
-            <a href="#contact" class="btn btn-outline">Get In Touch</a>
-          </div>
-        </div>
+        <p class="hero-eyebrow">Designing more inclusive experiences</p>
+        <h1 id="hero-heading">Accessibility<br>meets <em>real</em><br>impact.</h1>
+        <p class="hero-lead">I research, design, and advocate for digital experiences that are accessible, human-centered, and business-driven — helping organizations make better decisions for everyone.</p>
+        <div class="hero-actions"><a href="#work" class="btn btn-primary">View My Work <span aria-hidden="true">→</span></a><a href="#about" class="btn btn-outline">About Me</a></div>
+      </div>
+      <div class="hero-media">
+        <img src="image/hero-workspace.png" alt="" width="1489" height="485" fetchpriority="high" decoding="async" />
       </div>
     </section>
+    <section class="expertise-strip" aria-label="Areas of expertise"><ul class="container expertise-grid" role="list"><li class="expertise-item"><span class="expertise-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><circle cx="18" cy="13" r="6"/><path d="M6 37v-6c0-10 24-10 24 0v6M29 8a6 6 0 0 1 0 12m5 6c5 1 6 5 6 11"/></svg></span><div><h3>Accessibility Strategy</h3><p>Digital products that include everyone</p></div></li><li class="expertise-item"><span class="expertise-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M12 6h17l7 7v27H12zM29 6v9h7M18 21h12M18 27h12M18 33h8M7 11v24"/></svg></span><div><h3>User Research</h3><p>Evidence-based insights and recommendations</p></div></li><li class="expertise-item"><span class="expertise-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M17 31c0-6-7-8-7-16a13 13 0 0 1 26 0c0 8-7 10-7 16zM17 36h12M20 41h6"/></svg></span><div><h3>Experience Design</h3><p>Human-centered solutions for real-world problems</p></div></li><li class="expertise-item"><span class="expertise-icon"><svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M7 38V26h6v12zM21 38V17h6v21zM35 38V7h6v31zM10 19l13-10 14-6m-7-1 7 1-1 7"/></svg></span><div><h3>Strategic Impact</h3><p>Helping organizations make better decisions</p></div></li></ul><svg class="botanical" viewBox="0 0 160 300" fill="none" stroke="currentColor" aria-hidden="true"><path d="M140 300C135 180 35 100 35 0M111 211C18 182 9 140 5 110c66 23 88 58 106 101ZM83 144C155 110 129 48 100 23c-13 51-26 80-17 121ZM48 69C3 47 2 20 5 0c32 13 40 40 43 69Z"/></svg></section>
 
+    <section id="work" class="featured-work" aria-labelledby="work-heading"><svg class="botanical" viewBox="0 0 160 300" fill="none" stroke="currentColor" aria-hidden="true"><path d="M140 300C135 180 35 100 35 0M111 211C18 182 9 140 5 110c66 23 88 58 106 101ZM83 144C155 110 129 48 100 23c-13 51-26 80-17 121ZM48 69C3 47 2 20 5 0c32 13 40 40 43 69Z"/></svg><div class="container"><div class="work-heading-row"><div><p class="eyebrow">Featured work</p><h2 id="work-heading">Real problems. Practical solutions. Meaningful impact.</h2></div><a class="all-projects-link btn btn-primary" href="#all-projects">View all projects <span aria-hidden="true">→</span></a></div><div class="project-grid" role="list"><article class="project-card" role="listitem"><div class="project-media image-placeholder"><span aria-hidden="true">Custom Shortcuts image</span><p class="project-badge">Professional Work</p></div><div class="project-copy"><h3>Custom Shortcuts</h3><p>Accessibility research and design recommendations that improved usability and inclusion.</p><a href="#custom-shortcuts-details" aria-label="View project overview for Custom Shortcuts">View project overview <span aria-hidden="true">→</span></a></div></article><article class="project-card" role="listitem"><div class="project-media image-placeholder"><span aria-hidden="true">place holder title image</span><p class="project-badge">Case Study</p></div><div class="project-copy"><h3>place holder title</h3><p>another case study here</p><a href="case-study-patient-portal.html" aria-label="View case study for place holder title">View case study <span aria-hidden="true">→</span></a></div></article><article class="project-card" role="listitem"><div class="project-media image-placeholder"><span aria-hidden="true">place holder title image</span><p class="project-badge">Case Study</p></div><div class="project-copy"><h3>place holder title</h3><p>another case study here</p><a href="case-study-checkout-remediation.html" aria-label="View case study for place holder title">View case study <span aria-hidden="true">→</span></a></div></article></div></div></section>
     <!-- About -->
     <section id="about" aria-labelledby="about-heading">
       <div class="container about-grid">
         <div class="about-image-wrap">
           <div class="about-image-placeholder">
-            <img src="image/first image.jpg" alt="Tanjina Haque, Accessibility Tester" class="about-photo" />
+            <img src="image/about-portrait.png" alt="Tanjina Haque" class="about-photo" width="1122" height="1402" loading="lazy" decoding="async" />
           </div>
           <div class="about-image-deco" aria-hidden="true"></div>
         </div>
         <div class="about-text">
           <h2 id="about-heading">About Me</h2>
-          <p>I'm a certified accessibility tester with <strong>6+ years</strong> of experience helping organizations build inclusive digital products. My work sits at the intersection of technical testing, user empathy, and standards compliance.</p>
-          <p>I've partnered with government agencies, healthcare platforms, and e-commerce companies to audit, remediate, and integrate accessibility into every stage of the development lifecycle — not just at the finish line.</p>
-          <ul class="about-stats" role="list" aria-label="Key achievements">
+          <p>I'm an accessibility professional with 8+ years of experience helping teams create more inclusive digital experiences. My work brings together accessibility research, interaction design, technical evaluation, and cross-functional collaboration to help organizations make better design decisions.</p>
+          <p>I specialize in researching complex interaction patterns, translating accessibility requirements into practical design recommendations, and developing reusable component guidance for designers and developers. I've worked across banking, technology, and healthcare, contributing to accessible experiences on web and native mobile platforms.</p>
+          <p>Today, I'm expanding my work in UX/UI design, design systems, and human-centered product strategy. Through independent design projects, I'm applying my accessibility expertise to interface design, Figma components, and end-to-end user experiences—with the goal of making accessibility an integral part of how products are designed, not something addressed only after development.</p>
+          <ul class="about-expertise" role="list" aria-label="Expertise highlights">
             <li>
-              <span class="stat-num" aria-label="200 plus">200+</span>
-              <span class="stat-label">Audits completed</span>
+              <h3>Research</h3>
+              <p>Evidence-based interaction recommendations</p>
             </li>
             <li>
-              <span class="stat-num">40+</span>
-              <span class="stat-label">Client teams trained</span>
+              <h3>Design Systems</h3>
+              <p>Reusable accessible component guidance</p>
             </li>
             <li>
-              <span class="stat-num">98%</span>
-              <span class="stat-label">WCAG pass rate</span>
+              <h3>Strategy</h3>
+              <p>Cross-functional product collaboration</p>
             </li>
           </ul>
         </div>
@@ -129,315 +102,127 @@
     <section id="skills" aria-labelledby="skills-heading" class="section-tinted">
       <div class="container">
         <h2 id="skills-heading">Skills &amp; Expertise</h2>
-        <p class="section-sub">My core work is accessibility analysis, supported by design and research skills that help teams build more inclusive products.</p>
-
-        <div class="skill-group">
-          <div class="skill-heading-row">
-            <h3>Accessibility Analysis</h3>
-          </div>
-          <ul class="skills-grid" role="list">
-
-            <li class="skill-card">
-              <div class="skill-icon" aria-hidden="true">
-                <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect x="7" y="10" width="26" height="18" rx="3" stroke="currentColor" stroke-width="2"/>
-                  <path d="M16 32h8M20 28v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                  <path d="M14 19l3 3 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </div>
-              <h4>Manual Accessibility Testing</h4>
-              <p>Keyboard navigation, focus order, forms, modals, semantic structure, and screen reader behavior across real workflows.</p>
-              <a href="skill-details.html?skill=manual-testing" class="skill-detail-link" aria-label="View Manual Accessibility Testing examples">View examples</a>
-            </li>
-
-            <li class="skill-card">
-              <div class="skill-icon" aria-hidden="true">
-                <svg viewBox="0 0 300 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M58 174L150 14L224 137" stroke="currentColor" stroke-width="13" stroke-linejoin="miter"/>
-                  <path d="M58 174H216" stroke="currentColor" stroke-width="13" stroke-linecap="butt"/>
-                  <circle cx="235" cy="174" r="16" stroke="currentColor" stroke-width="13"/>
-                  <text x="104" y="148" fill="currentColor" font-family="DM Sans, Arial, sans-serif" font-size="76" font-weight="700" letter-spacing="-7">ax</text>
-                </svg>
-              </div>
-              <h4>Automated Auditing</h4>
-              <p>Axe-core, Lighthouse, Deque WorldSpace, and Pa11y used to catch repeatable issues and support regression checks.</p>
-              <a href="skill-details.html?skill=automated-auditing" class="skill-detail-link" aria-label="View Automated Auditing examples">View examples</a>
-            </li>
-
-            <li class="skill-card">
-              <div class="skill-icon" aria-hidden="true">
-                <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect x="13" y="7" width="14" height="26" rx="3" stroke="currentColor" stroke-width="2"/>
-                  <path d="M18 11h4M18 29h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                  <path d="M16.5 20l2.5 2.5 5-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </div>
-              <h4>Mobile Accessibility Testing</h4>
-              <p>iOS and Android accessibility testing with VoiceOver, TalkBack, touch targets, gestures, orientation, and responsive behavior.</p>
-              <a href="skill-details.html?skill=mobile-testing" class="skill-detail-link" aria-label="View Mobile Accessibility Testing examples">View examples</a>
-            </li>
-
-            <li class="skill-card">
-              <div class="skill-icon" aria-hidden="true">
-                <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M20 20a4 4 0 104-4h-4v4z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
-                  <path d="M16 32a4 4 0 004-4v-4h-4a4 4 0 000 8z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
-                  <path d="M16 24h4v-8h-4a4 4 0 000 8z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
-                  <path d="M16 16h4V8h-4a4 4 0 000 8z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
-                  <path d="M20 16h4a4 4 0 000-8h-4v8z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
-                </svg>
-              </div>
-              <h4>Accessibility Annotations</h4>
-              <p>Figma-based accessibility annotation documents using annotation kits to define roles, labels, focus order, keyboard behavior, states, and developer requirements on top of design files.</p>
-              <a href="skill-details.html?skill=accessibility-annotations" class="skill-detail-link" aria-label="View Accessibility Annotations examples">View examples</a>
-            </li>
-
-            <li class="skill-card">
-              <div class="skill-icon" aria-hidden="true">
-                <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M11 29l3.5-8.5L26.8 8.2a3 3 0 014.2 4.2L18.8 24.7 11 29z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
-                  <path d="M24.5 10.5l5 5M14.5 20.5l4.3 4.2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                </svg>
-              </div>
-              <h4>Reporting &amp; Remediation</h4>
-              <p>Clear issue writeups with severity, user impact, reproduction steps, and developer-ready guidance.</p>
-              <a href="skill-details.html?skill=reporting-remediation" class="skill-detail-link" aria-label="View Reporting and Remediation examples">View examples</a>
-            </li>
-
-            <li class="skill-card">
-              <div class="skill-icon" aria-hidden="true">
-                <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M10 31V15l10-6 10 6v16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <rect x="15" y="22" width="10" height="9" rx="1" stroke="currentColor" stroke-width="2"/>
-                </svg>
-              </div>
-              <h4>Standards Compliance</h4>
-              <p>WCAG 2.0 through 2.2, Section 508, EN 301 549, and ADA digital accessibility requirements.</p>
-              <a href="skill-details.html?skill=standards-compliance" class="skill-detail-link" aria-label="View Standards Compliance examples">View examples</a>
-            </li>
-
-          </ul>
-        </div>
-
-        <div class="secondary-skills">
-          <article class="secondary-skill-card">
-            <div class="secondary-skill-icon" aria-hidden="true">
-              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M20 20a4 4 0 104-4h-4v4z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
-                <path d="M16 32a4 4 0 004-4v-4h-4a4 4 0 000 8z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
-                <path d="M16 24h4v-8h-4a4 4 0 000 8z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
-                <path d="M16 16h4V8h-4a4 4 0 000 8z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
-                <path d="M20 16h4a4 4 0 000-8h-4v8z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
-              </svg>
-            </div>
-            <div class="skill-heading-row">
-              <h3>Design</h3>
-              <p class="skill-group-label">Secondary Skill</p>
-            </div>
-            <p>I use design thinking to spot barriers earlier, clarify user flows, and support inclusive product decisions before they become accessibility defects.</p>
-            <ul class="secondary-skill-list" role="list">
-              <li>Accessible product design</li>
-              <li>Wireframing and prototyping</li>
-              <li>Design systems and reusable components</li>
-              <li>Visual accessibility, contrast, spacing, and focus states</li>
-            </ul>
-            <a href="skill-details.html?skill=design" class="skill-detail-link" aria-label="View Design examples">View examples</a>
-          </article>
-
-          <article class="secondary-skill-card">
-            <div class="secondary-skill-icon" aria-hidden="true">
-              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="7" y="8" width="26" height="24" rx="4" stroke="currentColor" stroke-width="2"/>
-                <circle cx="17" cy="17" r="3.5" stroke="currentColor" stroke-width="2"/>
-                <path d="M11.5 27c1.2-3.1 3.1-4.6 5.5-4.6s4.3 1.5 5.5 4.6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                <path d="M24 16l1.8 1.8 3.7-4.6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M24 24h5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-              </svg>
-            </div>
-            <div class="skill-heading-row">
-              <h3>Research</h3>
-              <p class="skill-group-label">Secondary Skill</p>
-            </div>
-            <p>I bring user-centered research methods into accessibility work so recommendations reflect real people, assistive technology use, and lived experience.</p>
-            <ul class="secondary-skill-list" role="list">
-              <li>Usability research with disabled users</li>
-              <li>Heuristic evaluation and workflow review</li>
-              <li>Interview synthesis and accessibility insights</li>
-              <li>Plain-language recommendations for product teams</li>
-            </ul>
-            <a href="skill-details.html?skill=research" class="skill-detail-link" aria-label="View Research examples">View examples</a>
-          </article>
-        </div>
-
-        <div class="soft-skills">
-          <div class="skill-heading-row">
-            <h3>Soft Skills &amp; Leadership</h3>
-          </div>
-          <div class="soft-skills-grid" role="list">
-            <article class="soft-skill-card" role="listitem">
-              <h4>Product Partnership</h4>
-              <p>I work closely with product owners and product managers to identify accessibility gaps in workflows, clarify user impact, and help teams make stronger product decisions.</p>
-              <a href="skill-details.html?skill=product-partnership" class="skill-detail-link" aria-label="View Product Partnership examples">View examples</a>
-            </article>
-            <article class="soft-skill-card" role="listitem">
-              <h4>Developer Communication</h4>
-              <p>I partner directly with developers to explain expected behavior, reduce ambiguity, and bridge communication gaps between design intent, technical implementation, and accessibility requirements.</p>
-              <a href="skill-details.html?skill=developer-communication" class="skill-detail-link" aria-label="View Developer Communication examples">View examples</a>
-            </article>
-            <article class="soft-skill-card" role="listitem">
-              <h4>Workflow Improvement</h4>
-              <p>I look for process gaps that cause accessibility issues to repeat, then help teams strengthen workflows so accessibility is easier to catch, fix, and maintain.</p>
-              <a href="skill-details.html?skill=workflow-improvement" class="skill-detail-link" aria-label="View Workflow Improvement examples">View examples</a>
-            </article>
-            <article class="soft-skill-card" role="listitem">
-              <h4>Jira Bug Communication</h4>
-              <p>I write clear Jira tickets with reproduction steps, user impact, severity, expected behavior, screenshots or notes when useful, and acceptance criteria for validation.</p>
-              <a href="skill-details.html?skill=jira-bug-communication" class="skill-detail-link" aria-label="View Jira Bug Communication examples">View examples</a>
-            </article>
-            <article class="soft-skill-card" role="listitem">
-              <h4>Accessibility Education</h4>
-              <p>I teach accessibility concepts to people outside my discipline, including designers, researchers, product owners, product managers, developers, and QA partners.</p>
-              <a href="skill-details.html?skill=accessibility-education" class="skill-detail-link" aria-label="View Accessibility Education examples">View examples</a>
-            </article>
-            <article class="soft-skill-card" role="listitem">
-              <h4>Facilitation &amp; Alignment</h4>
-              <p>I help cross-functional teams align around priorities, tradeoffs, and next steps so accessibility conversations lead to decisions instead of stalled handoffs.</p>
-              <a href="skill-details.html?skill=facilitation-alignment" class="skill-detail-link" aria-label="View Facilitation and Alignment examples">View examples</a>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Work / Case Studies -->
-    <section id="work" aria-labelledby="work-heading">
-      <div class="container">
-        <h2 id="work-heading">Featured Work</h2>
-        <p class="section-sub">Selected case studies and impact highlights.</p>
-        <div class="work-grid" role="list">
-
-          <article class="work-card case-study-preview" role="listitem">
-            <div class="work-tag">Government</div>
-            <h3>State Benefits Portal Audit</h3>
-            <p>Full WCAG 2.1 AA audit of a public-facing benefits application serving 2M+ residents. Identified 147 issues; remediated to 100% compliance within 3 sprints.</p>
-            <ul class="work-outcomes" aria-label="Outcomes">
-              <li>100% WCAG 2.1 AA compliance</li>
-              <li>Screen reader success rate: 54% → 97%</li>
-              <li>Reduced support calls by 31%</li>
-            </ul>
-            <a href="case-study-state-benefits.html" class="case-study-link" aria-label="Read State Benefits Portal Audit case study">Read case study</a>
-          </article>
-
-          <article class="work-card case-study-preview" role="listitem">
-            <div class="work-tag">Healthcare</div>
-            <h3>Patient Portal Redesign</h3>
-            <p>Embedded in a product team to define accessibility requirements from discovery through launch for a hospital network's digital patient portal.</p>
-            <ul class="work-outcomes" aria-label="Outcomes">
-              <li>Zero critical issues at launch</li>
-              <li>Colour contrast pass rate: 100%</li>
-              <li>ARIA landmark structure fully implemented</li>
-            </ul>
-            <a href="case-study-patient-portal.html" class="case-study-link" aria-label="Read Patient Portal Redesign case study">Read case study</a>
-          </article>
-
-          <article class="work-card case-study-preview" role="listitem">
-            <div class="work-tag">E-Commerce</div>
-            <h3>Checkout Flow Remediation</h3>
-            <p>Identified and fixed keyboard trap and focus management failures in a multi-step checkout affecting ~40K monthly users with motor impairments.</p>
-            <ul class="work-outcomes" aria-label="Outcomes">
-              <li>Keyboard trap resolved across 6 steps</li>
-              <li>Focus management fully ARIA-compliant</li>
-              <li>Conversion uplift of 8% post-fix</li>
-            </ul>
-            <a href="case-study-checkout-remediation.html" class="case-study-link" aria-label="Read Checkout Flow Remediation case study">Read case study</a>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- Certifications -->
-    <section id="certifications" aria-labelledby="certs-heading">
-      <div class="container">
-        <h2 id="certs-heading">Certifications</h2>
-        <p class="section-sub">Formal credentials that back the work.</p>
-        <ul class="certs-list" role="list">
-          <li class="cert-item">
-            <div class="cert-badge" aria-hidden="true">CPACC</div>
-            <div>
-              <h3>Certified Professional in Accessibility Core Competencies</h3>
-              <p>IAAP · Issued 2021 · <span class="cert-status">Active</span></p>
-            </div>
+        <ul class="core-skills-grid" role="list">
+          <li class="core-skill-card">
+            <svg class="core-skill-icon" viewBox="0 0 24 28" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 3H5a2 2 0 0 0-2 2v4m12-6h4a2 2 0 0 1 2 2v4M3 15v4a2 2 0 0 0 2 2h4m12-6v4a2 2 0 0 1-2 2h-4"/><circle cx="11" cy="11" r="4"/><path d="m14 14 3 3"/></svg>
+            <h3>Accessibility Testing &amp; Auditing</h3>
+            <p>Manual and automated accessibility evaluations across web and native mobile platforms. Expertise includes keyboard navigation, JAWS, NVDA, VoiceOver, TalkBack, WCAG conformance evaluation, defect reporting, and remediation validation.</p>
           </li>
-          <li class="cert-item">
-            <div class="cert-badge" aria-hidden="true">WAS</div>
-            <div>
-              <h3>Web Accessibility Specialist</h3>
-              <p>IAAP · Issued 2022 · <span class="cert-status">Active</span></p>
-            </div>
+          <li class="core-skill-card">
+            <svg class="core-skill-icon" viewBox="0 0 24 28" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="4" r="2"/><path d="m4 9 8 2 8-2m-8 2v5m0 0-5 6m5-6 5 6"/></svg>
+            <h3>Inclusive Design &amp; Accessibility</h3>
+            <p>Reviewing designs, evaluating accessible interaction patterns, identifying barriers early, and recommending practical solutions that improve inclusive user experiences.</p>
           </li>
-          <li class="cert-item">
-            <div class="cert-badge" aria-hidden="true">ADS</div>
-            <div>
-              <h3>Accessible Document Specialist</h3>
-              <p>IAAP · Issued 2023 · <span class="cert-status">Active</span></p>
-            </div>
+          <li class="core-skill-card">
+            <svg class="core-skill-icon" viewBox="0 0 24 28" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m12 2 4 4-4 4-4-4Zm-6 6 4 4-4 4-4-4Zm12 0 4 4-4 4-4-4Zm-6 6 4 4-4 4-4-4Z"/></svg>
+            <h3>Design Systems Accessibility</h3>
+            <p>Creating reusable component accessibility guidance, including keyboard interactions, screen reader behavior, component states, accessibility specifications, acceptance criteria, and implementation examples.</p>
           </li>
-          <li class="cert-item">
-            <div class="cert-badge" aria-hidden="true">DHS</div>
-            <div>
-              <h3>Section 508 Trusted Tester</h3>
-              <p>DHS · Issued 2020 · <span class="cert-status">Active</span></p>
-            </div>
+          <li class="core-skill-card">
+            <svg class="core-skill-icon" viewBox="0 0 24 28" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="10.5" cy="10.5" r="7.5"/><path d="m16 16 6 6"/></svg>
+            <h3>Interaction Research</h3>
+            <p>Researching complex interaction patterns, synthesizing existing usability findings and accessibility evidence, and translating research into actionable recommendations for designers and product teams.</p>
+          </li>
+          <li class="core-skill-card">
+            <svg class="core-skill-icon" viewBox="0 0 24 28" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 2H8a4 4 0 0 0 0 8h4Zm0 0h4a4 4 0 0 1 0 8h-4ZM12 10H8a4 4 0 0 0 0 8h4Zm0 8H8a4 4 0 1 0 4 4Z"/><circle cx="16" cy="14" r="4"/></svg>
+            <h3>UX/UI Design</h3>
+            <p>Applying user-centered design methods through independent projects, including wireframing, interface design, visual hierarchy, prototyping, and reusable Figma components.</p>
+          </li>
+          <li class="core-skill-card">
+            <svg class="core-skill-icon" viewBox="0 0 24 28" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="8" cy="7" r="3"/><circle cx="18" cy="8" r="2.5"/><path d="M2 21v-2a6 6 0 0 1 12 0v2m2-7a5 5 0 0 1 6 5v2"/></svg>
+            <h3>Product Collaboration &amp; Influence</h3>
+            <p>Partnering with designers, developers, and product owners to evaluate competing approaches, communicate technical requirements, facilitate decisions, and provide accessibility education.</p>
           </li>
         </ul>
       </div>
     </section>
 
-    <!-- Resume -->
+    <section id="all-projects" aria-labelledby="all-projects-heading"><div class="container"><p class="eyebrow">Explore the work</p><h2 id="all-projects-heading">Projects &amp; case studies</h2><div class="project-directory"><article id="custom-shortcuts-details"><h3>Custom Shortcuts</h3><p>Professional contribution: accessibility research and design recommendations to improve usability and inclusion.</p><p>A full case study will be added when the project materials are available.</p></article><ul><li><a href="case-study-patient-portal.html">place holder title →</a></li><li><a href="case-study-checkout-remediation.html">place holder title →</a></li><li><a href="case-study-state-benefits.html">placeholder title →</a></li></ul></div></div></section>
+    <!-- Experience & Credentials -->
     <section id="resume" aria-labelledby="resume-heading">
       <div class="container">
         <div class="resume-header">
           <div>
-            <h2 id="resume-heading" aria-label="Résumé">Resume</h2>
-            <p class="section-sub">A quick view of my experience, education, and professional focus.</p>
+            <h2 id="resume-heading">Experience &amp; Credentials</h2>
+            <p class="section-sub">8+ years of experience advancing digital accessibility through technical evaluation, inclusive design research, and cross-functional collaboration.</p>
           </div>
-          <a href="#contact" class="btn btn-outline" aria-label="Request full résumé">Request Full Resume</a>
+          <div class="resume-download">
+            <!-- Once resume.pdf is supplied in the project root, replace the disabled button
+                 with <a href="resume.pdf" download class="btn btn-primary">Download Full Résumé</a>. -->
+            <button type="button" class="btn btn-primary" disabled aria-describedby="resume-download-note">Download Full Résumé</button>
+            <p id="resume-download-note">PDF coming soon.</p>
+          </div>
         </div>
-        <div class="resume-grid">
-          <article class="resume-card resume-summary">
-            <h3>Professional Summary</h3>
-            <p>Accessibility tester and inclusive design advocate with experience auditing websites, mobile apps, documents, and product workflows against WCAG and Section 508 requirements.</p>
-          </article>
-          <article class="resume-card">
-            <span class="resume-date">2021 - Present</span>
-            <h3>Accessibility Tester</h3>
-            <p class="resume-org">Digital Accessibility Consultant</p>
-            <ul class="resume-list">
-              <li>Conduct manual and automated audits for web and mobile experiences.</li>
-              <li>Document findings with severity, user impact, and remediation guidance.</li>
-              <li>Partner with design, engineering, and QA teams to prevent repeat issues.</li>
+        <div class="experience-layout">
+          <div>
+            <h3 class="experience-label">Professional Experience</h3>
+            <ol class="experience-timeline" role="list">
+              <li>
+                <article class="experience-role experience-current">
+                  <p class="experience-date">June 2021–Present</p>
+                  <h4>Regions Bank</h4>
+                  <p class="experience-position">Accessibility Analyst</p>
+                  <ul class="experience-focus">
+                    <li>Research accessible interaction patterns and advise product teams on inclusive design decisions.</li>
+                    <li>Develop reusable accessibility component guidance, acceptance criteria, and implementation examples.</li>
+                    <li>Conduct web and native mobile accessibility testing and auditing, documenting barriers and validating remediation.</li>
+                  </ul>
+                </article>
+              </li>
+              <li>
+                <article class="experience-role">
+                  <p class="experience-date">May 2020–June 2021</p>
+                  <h4>Dell Technologies</h4>
+                  <p class="experience-position">Accessibility Specialist</p>
+                  <ul class="experience-focus">
+                    <li>Accessibility evaluation and assistive technology testing</li>
+                    <li>Defect documentation and remediation collaboration</li>
+                  </ul>
+                </article>
+              </li>
+              <li>
+                <article class="experience-role">
+                  <p class="experience-date">February 2019–May 2020</p>
+                  <h4>Santander Bank</h4>
+                  <p class="experience-position">Accessibility Tester</p>
+                  <ul class="experience-focus">
+                    <li>Accessibility, functional, and regression testing</li>
+                    <li>Accessible document evaluation and remediation</li>
+                  </ul>
+                </article>
+              </li>
+              <li>
+                <article class="experience-role">
+                  <p class="experience-date">March 2018–January 2019</p>
+                  <h4>UnitedHealth</h4>
+                  <p class="experience-position">ADA Compliance Tester</p>
+                  <ul class="experience-focus">
+                    <li>Digital accessibility evaluation</li>
+                    <li>Wireframe reviews and developer collaboration</li>
+                  </ul>
+                </article>
+              </li>
+            </ol>
+          </div>
+          <div class="experience-education" role="region" aria-labelledby="experience-education-heading">
+            <h3 id="experience-education-heading">Education &amp; Credentials</h3>
+            <ul class="experience-credentials" role="list">
+              <li>
+                <div class="credential-badge" aria-hidden="true">Google</div>
+                <div>
+                  <h4>Google UX Design Professional Certificate</h4>
+                  <p>Google / Coursera · Completed</p>
+                </div>
+              </li>
+              <li>
+                <div class="credential-badge" aria-hidden="true">Deque</div>
+                <div>
+                  <h4>Accessibility Professional Development</h4>
+                  <p>Deque University</p>
+                </div>
+              </li>
             </ul>
-          </article>
-          <article class="resume-card">
-            <span class="resume-date">2018 - 2021</span>
-            <h3>QA Analyst</h3>
-            <p class="resume-org">Product &amp; Web Testing</p>
-            <ul class="resume-list">
-              <li>Validated user flows, forms, navigation, and responsive layouts.</li>
-              <li>Created test cases for usability, accessibility, and regression coverage.</li>
-              <li>Collaborated with developers to verify fixes before release.</li>
-            </ul>
-          </article>
-          <article class="resume-card">
-            <span class="resume-date">Education</span>
-            <h3>Accessibility &amp; UX Training</h3>
-            <p class="resume-org">Continuing Professional Development</p>
-            <ul class="resume-list">
-              <li>WCAG testing, screen reader workflows, and inclusive design practices.</li>
-              <li>Usability review, design systems, and accessible content structure.</li>
-            </ul>
-          </article>
+          </div>
         </div>
       </div>
     </section>
@@ -525,23 +310,26 @@
           <div class="form-row">
             <div class="form-group">
               <label for="name">Full Name <span class="required" aria-hidden="true">*</span><span class="sr-only">(required)</span></label>
-              <input type="text" id="name" name="name" autocomplete="name" required aria-required="true" placeholder="Your name" />
+              <input type="text" id="name" name="name" autocomplete="name" aria-describedby="name-error" required aria-required="true" placeholder="Your name" />
+              <p class="field-error" id="name-error" hidden><svg class="error-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 7v6"/><circle cx="12" cy="17" r="1" fill="currentColor" stroke="none"/></svg><span><span class="sr-only">Error: </span><span class="error-message"></span></span></p>
             </div>
             <div class="form-group">
               <label for="email">Email Address <span class="required" aria-hidden="true">*</span><span class="sr-only">(required)</span></label>
-              <input type="email" id="email" name="email" autocomplete="email" required aria-required="true" placeholder="you@example.com" />
+              <input type="email" id="email" name="email" autocomplete="email" aria-describedby="email-error" required aria-required="true" placeholder="you@example.com" />
+              <p class="field-error" id="email-error" hidden><svg class="error-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 7v6"/><circle cx="12" cy="17" r="1" fill="currentColor" stroke="none"/></svg><span><span class="sr-only">Error: </span><span class="error-message"></span></span></p>
             </div>
           </div>
           <div class="form-group">
             <label for="project">Tell me about your project <span class="required" aria-hidden="true">*</span><span class="sr-only">(required)</span></label>
-            <textarea id="project" name="project" rows="5" required aria-required="true" placeholder="Describe your project, timeline, and what kind of support you're looking for..."></textarea>
+            <textarea id="project" name="project" rows="5" aria-describedby="project-error" required aria-required="true" placeholder="Describe your project, timeline, and what kind of support you're looking for..."></textarea>
+            <p class="field-error" id="project-error" hidden><svg class="error-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 7v6"/><circle cx="12" cy="17" r="1" fill="currentColor" stroke="none"/></svg><span><span class="sr-only">Error: </span><span class="error-message"></span></span></p>
           </div>
+          <p id="contact-feedback" role="status" aria-live="polite" aria-atomic="true"></p>
           <button type="submit" class="btn btn-primary">Send Message</button>
         </form>
         <div class="contact-links">
-          <a href="mailto:tanjina@example.com" aria-label="Email Tanjina Haque">tanjina@example.com</a>
-          <a href="https://linkedin.com/in/tanjinahaque" aria-label="Tanjina Haque on LinkedIn" rel="noopener noreferrer" target="_blank">LinkedIn</a>
-          <a href="https://github.com/tanjinahaque" aria-label="Tanjina Haque on GitHub" rel="noopener noreferrer" target="_blank">GitHub</a>
+          <a href="mailto:tanjinahaque.ada@gmail.com" aria-label="Email Tanjina Haque">tanjinahaque.ada@gmail.com</a>
+          <a href="https://www.linkedin.com/in/tanjinahaque" aria-label="Tanjina Haque on LinkedIn" rel="noopener noreferrer" target="_blank">LinkedIn</a>
         </div>
       </div>
     </section>
@@ -555,7 +343,7 @@
       <nav aria-label="Footer navigation">
         <a href="#hero">Back to top</a>
         <a href="#about">About Me</a>
-        <a href="#work">Work</a>
+        <a href="#all-projects">Work</a>
         <a href="#contact">Contact Me</a>
       </nav>
     </div>
@@ -606,6 +394,54 @@
       passwordToggle.textContent = isVisible ? 'Show' : 'Hide';
     });
 
+    // Accessible contact-form validation. No delivery endpoint is configured.
+    const contactForm = document.querySelector('.contact-form');
+    const contactFields = ['name', 'email', 'project'].map(id => document.getElementById(id));
+    const contactFeedback = document.getElementById('contact-feedback');
+    let contactSubmitted = false;
+
+    function validateContactField(field) {
+      const requiredMessages = {
+        name: 'Enter your full name.',
+        email: 'Enter your email address.',
+        project: 'Tell me about your project.'
+      };
+      let message = '';
+      if (!field.value.trim()) {
+        message = requiredMessages[field.id];
+      } else if (field.id === 'email' && field.validity.typeMismatch) {
+        message = 'Enter a valid email address, such as name@example.com.';
+      }
+      const error = document.getElementById(`${field.id}-error`);
+      error.querySelector('.error-message').textContent = message;
+      error.hidden = !message;
+      if (message) field.setAttribute('aria-invalid', 'true');
+      else field.removeAttribute('aria-invalid');
+      return !message;
+    }
+
+    contactFields.forEach(field => {
+      field.addEventListener('blur', () => {
+        if (contactSubmitted || field.value.length) validateContactField(field);
+      });
+      field.addEventListener('input', () => {
+        contactFeedback.textContent = '';
+        if (field.hasAttribute('aria-invalid')) validateContactField(field);
+      });
+    });
+
+    contactForm.addEventListener('submit', event => {
+      event.preventDefault();
+      contactSubmitted = true;
+      const invalidFields = contactFields.filter(field => !validateContactField(field));
+      if (invalidFields.length) {
+        contactFeedback.textContent = `Please correct ${invalidFields.length === 1 ? 'the highlighted field' : `the ${invalidFields.length} highlighted fields`}.`;
+        invalidFields[0].focus();
+        return;
+      }
+      contactFeedback.textContent = 'Your details are valid, but this form is not connected to a sending service yet. Your message has not been sent. Please use the email link below to contact tanjinahaque.ada@gmail.com.';
+    });
+
     // Year
     document.getElementById('year').textContent = new Date().getFullYear();
 
@@ -618,6 +454,14 @@
       menu.hidden = expanded;
     });
 
+    document.addEventListener('keydown', event => {
+      if (event.key === 'Escape' && !menu.hidden) {
+        menu.hidden = true;
+        btn.setAttribute('aria-expanded', 'false');
+        btn.focus();
+      }
+    });
+
     // Close mobile menu on link click
     menu.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => {
@@ -626,9 +470,15 @@
       });
     });
 
-    // Active section state for segmented navigation
-    const siteHeader = document.querySelector('header');
-    const sectionNavLinks = Array.from(document.querySelectorAll('header nav a[href^="#"], .mobile-menu a[href^="#"]'));
+    // Home includes the hero, expertise strip, and featured work until About Me.
+    // Work starts at the separate Explore the work section.
+    function syncAnchorOffset() {
+      const offset = document.querySelector('.nav-inner').getBoundingClientRect().height + 25;
+      document.documentElement.style.setProperty('--anchor-offset', `${offset}px`);
+    }
+    syncAnchorOffset();
+    new ResizeObserver(syncAnchorOffset).observe(document.querySelector('.nav-inner'));
+    const sectionNavLinks = Array.from(document.querySelectorAll('.desktop-navigation a[href^="#"], .mobile-menu a[href^="#"]'));
     const sectionsById = new Map(
       sectionNavLinks
         .map(link => link.getAttribute('href').slice(1))
@@ -640,7 +490,7 @@
     function setActiveSection(id) {
       sectionNavLinks.forEach(link => {
         if (link.getAttribute('href') === `#${id}`) {
-          link.setAttribute('aria-current', 'page');
+          link.setAttribute('aria-current', 'location');
         } else {
           link.removeAttribute('aria-current');
         }
@@ -653,29 +503,35 @@
     }
 
     function updateActiveSectionFromScroll() {
-      const headerOffset = siteHeader.offsetHeight + 24;
+      const headerOffset = document.querySelector('.nav-inner').getBoundingClientRect().height + 27;
       const currentPosition = window.scrollY + headerOffset;
       let activeId = 'hero';
-
+      let nearestTop = -Infinity;
       sectionsById.forEach((section, id) => {
-        if (section.offsetTop <= currentPosition) {
+        if (section.offsetTop <= currentPosition && section.offsetTop > nearestTop) {
           activeId = id;
+          nearestTop = section.offsetTop;
         }
       });
 
       setActiveSection(activeId);
     }
 
-    // Smooth scroll polyfill for keyboard users
+    // Preserve anchor URLs and move keyboard focus without a double scroll.
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function(e) {
-        const target = document.querySelector(this.getAttribute('href'));
+        if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+        const target = document.getElementById(this.getAttribute('href').slice(1));
         if (target) {
           e.preventDefault();
-          setActiveSection(target.id);
+          menu.hidden = true;
+          btn.setAttribute('aria-expanded', 'false');
+          syncAnchorOffset();
+          if (sectionsById.has(target.id)) setActiveSection(target.id);
+          if (window.location.hash !== `#${target.id}`) history.pushState(null, '', `#${target.id}`);
           target.setAttribute('tabindex', '-1');
-          target.focus({ preventScroll: false });
-          target.scrollIntoView({ behavior: 'smooth' });
+          target.focus({ preventScroll: true });
+          target.scrollIntoView({ behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
         }
       });
     });
